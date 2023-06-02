@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<title>Login SignUp</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+	integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+  ></script>
+  <link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+	crossorigin="anonymous"
+  />
+  <link rel="shortcut icon" href="images/Unicorn.png" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="login.css">
+
+  <title>TAB</title>
+
+  <script>
+  $(document).ready(function(){
+    $("form").submit(function(){
+      alert("have fun.");
+    });
+  });
+  </script>
+</head>
+<body class="bg-dark text-light d-flex flex-column align-items-center my-5">
+	<div class="container" id="container">
+		<div class="form-container sign-up-container">
+			<form action="#">
+				<h1>Create Account.</h1>
+				<div class="social-container">
+					<a href="" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="" class="social"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<span>or use your email for registration</span>
+				<input type="text" placeholder="Name" />
+				<input type="email" placeholder="Email" />
+				<input type="password" placeholder="Password" />
+				<button class="btn rounded">sign up</button>
+			</form>
+		</div>
+		<div class="form-container sign-in-container">
+			<form action="index.html">
+				<h1 class="text-black">Sign in</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<span>or use your account</span>
+				<input type="email" placeholder="Email" />
+				<input type="password" placeholder="Password" />
+				<a href="recover.html">Forgot your password?</a>
+				<button class="btn rounded btn-primary">sign in.</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>Welcome Back.</h1>
+					<p>keep connected.</p>
+					<div class="btn rounded btn-primary" id="signIn">sign in.</div>
+				</div>
+				<div class="overlay-panel overlay-right bg-primary">
+					<h1>Start Here!</h1>
+					<p>enter your personal details and scam with us.</p>
+					<button class="btn rounded" id="signUp">sign up.</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<p>
+		Wanna become a business scammer in no time?
+		<a href="index.html" class="btn rounded bg-light">TAB academy.</a>
+		<div class="h1 d-flex justify-content-center">our plans.</div>
+		<table class="table">
+			<thead>
+			  <tr>
+				<th scope="col">Class</th>
+				<th scope="col">Heading</th>
+				<th scope="col">Heading</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<th scope="row">Default</th>
+				<td>Cell</td>
+				<td>Cell</td>
+			  </tr>
+		  
+			  <tr class="table-primary">
+				<th scope="row">Primary Plan</th>
+				<td>Learning</td>
+				<td>With mentorship</td>
+			  </tr>
+			  <tr class="table-secondary">
+				<th scope="row">Secondary Plan</th>
+				<td>Courses</td>
+				<td>Access to all videos</td>
+			  </tr>
+			  <tr class="table-success">
+				<th scope="row">Success Plan</th>
+				<td>Investments</td>
+				<td>Everything above + Bonus materials</td>
+			  </tr>
+			</tbody>
+		  </table>
+		</p>
+	</footer>
+	<script src="script.js"></script>
